@@ -7,10 +7,10 @@
 
 import UIKit
 
-class LoginFormController: UIViewController {
+class ViewController: UIViewController {
 
     @IBOutlet weak var cleverimageView: UIImageView!
-    @IBOutlet weak var titleLabelLogin: UILabel!
+    @IBOutlet weak var lableOne: UILabel!
     @IBOutlet weak var titleLabelPassword: UILabel!
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var userPassword: UITextField!
@@ -29,8 +29,8 @@ class LoginFormController: UIViewController {
     }
     
     @objc func didTapOnClickButton () {
-    
-    
+
+
     }
 
 }
