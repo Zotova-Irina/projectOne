@@ -9,11 +9,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var cleverimageView: UIImageView!
+    @IBOutlet weak var lableOne: UILabel!
+    @IBOutlet weak var titleLabelPassword: UILabel!
+    @IBOutlet weak var userName: UITextField!
+    @IBOutlet weak var userPassword: UITextField!
+    @IBOutlet weak var clickButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        clickButton.addTarget(self, action: #selector(didTapOnClickButton), for: .touchUpInside)
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+    }
+    
+    @objc func didTapOnClickButton () {
 
+
+    }
 
 }
 

@@ -1,24 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZotovaIA_ProjectOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" translatesAutoresizingMaskIntoConstraints="NO" id="HC3-cO-xQv">
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clever" translatesAutoresizingMaskIntoConstraints="NO" id="Gba-o5-TLL">
+                                        <rect key="frame" x="75" y="30" width="240" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="a4U-wZ-NUb"/>
+                                            <constraint firstAttribute="height" constant="50" id="z7y-Tn-WLg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0mj-Nb-hok">
+                                        <rect key="frame" x="105.66666666666667" y="100" width="178.66666666666663" height="366"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9DD-Ay-oKw">
+                                                <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="200"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgY-QF-QpZ">
+                                                        <rect key="frame" x="51.666666666666664" y="0.0" width="75.666666666666686" height="35"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                        <color key="textColor" red="0.39470825893151518" green="0.45416272298078286" blue="0.38051202385445621" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" borderStyle="roundedRect" placeholder="введите логин" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W5h-0T-alx">
+                                                        <rect key="frame" x="6" y="55" width="166.66666666666666" height="35"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eh6-Mu-uS9">
+                                                        <rect key="frame" x="43.666666666666664" y="110" width="91.666666666666686" height="35"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                        <color key="textColor" red="0.3947082589" green="0.45416272299999999" blue="0.3805120239" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" borderStyle="roundedRect" placeholder="введите пароль" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="78a-Jg-kMW">
+                                                        <rect key="frame" x="0.0" y="165" width="178.66666666666666" height="35"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfL-i5-H7K">
+                                                <rect key="frame" x="0.0" y="335" width="178.66666666666666" height="31"/>
+                                                <color key="backgroundColor" red="0.3947082589" green="0.45416272299999999" blue="0.3805120239" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Войти" titleAlignment="automatic">
+                                                    <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.89332807064056396" green="0.95018631219863892" blue="0.81440609693527222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="0mj-Nb-hok" secondAttribute="bottom" constant="300" id="7o1-Ua-epT"/>
+                                    <constraint firstItem="0mj-Nb-hok" firstAttribute="top" secondItem="Gba-o5-TLL" secondAttribute="bottom" constant="20" id="UB0-Vg-MTw"/>
+                                    <constraint firstItem="Gba-o5-TLL" firstAttribute="top" secondItem="HC3-cO-xQv" secondAttribute="top" constant="30" id="Wxb-Yz-zjL"/>
+                                    <constraint firstItem="Gba-o5-TLL" firstAttribute="centerX" secondItem="HC3-cO-xQv" secondAttribute="centerX" id="Yuo-Dd-M4a"/>
+                                    <constraint firstItem="0mj-Nb-hok" firstAttribute="centerX" secondItem="HC3-cO-xQv" secondAttribute="centerX" id="agG-MJ-EmC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HC3-cO-xQv" secondAttribute="trailing" id="4Eq-tT-TkV"/>
+                            <constraint firstItem="HC3-cO-xQv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="mzA-aw-Ctm"/>
+                            <constraint firstItem="HC3-cO-xQv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pWD-dc-J7E"/>
+                            <constraint firstItem="HC3-cO-xQv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pjI-aJ-7fH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cleverimageView" destination="Gba-o5-TLL" id="2kM-P2-9Km"/>
+                        <outlet property="clickButton" destination="wfL-i5-H7K" id="kAr-ot-z1N"/>
+                        <outlet property="lableOne" destination="TgY-QF-QpZ" id="DX9-1d-AHw"/>
+                        <outlet property="titleLabelPassword" destination="eh6-Mu-uS9" id="ZUK-cw-vgn"/>
+                        <outlet property="userName" destination="W5h-0T-alx" id="kgb-rG-vYV"/>
+                        <outlet property="userPassword" destination="78a-Jg-kMW" id="HZf-4I-TAg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.399999999999999" y="93.103448275862078"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="clever" width="297" height="84.333335876464844"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
