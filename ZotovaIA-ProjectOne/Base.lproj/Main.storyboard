@@ -27,7 +27,7 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0mj-Nb-hok">
-                                        <rect key="frame" x="105.66666666666667" y="100" width="178.66666666666663" height="366"/>
+                                        <rect key="frame" x="105.66666666666669" y="100" width="178.66666666666663" height="366"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9DD-Ay-oKw">
                                                 <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="200"/>
