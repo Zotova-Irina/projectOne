@@ -14,24 +14,37 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleLabelPassword: UILabel!
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var userPassword: UITextField!
-    @IBOutlet weak var clickButton: UIButton!
+    
+    @IBOutlet weak var scrollView: UIScrollView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        clickButton.addTarget(self, action: #selector(didTapOnClickButton), for: .touchUpInside)
     }
     
-    override func didReceiveMemoryWarning() {
+    @IBAction func tupButton(_ sender: UIButton) {
+        let login = userName.text
+        let password = userPassword.text
+    if login == "",
+       password == "" {
+        performSegue(withIdentifier: "TabBarSegue", sender: self)
+    }else {
+        showError(massage: "Нправильно введен логин или пароль")
+    }
+    
+            func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
     
-    @objc func didTapOnClickButton () {
-
-
+        
     }
-
+    
+    @IBAction func viewTapped(_ sender:
+        UITapGestureRecognizer) {
+        scrollView.endEditing(true)
+    }
+    
 }
+
 
