@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C5C06212822CB00005B7420 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C06202822CB00005B7420 /* UIViewController+extension.swift */; };
 		8CBB37592814266200359936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB37582814266200359936 /* AppDelegate.swift */; };
 		8CBB375B2814266200359936 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB375A2814266200359936 /* SceneDelegate.swift */; };
 		8CBB375D2814266200359936 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB375C2814266200359936 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C5C06202822CB00005B7420 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
 		8CBB37552814266200359936 /* ZotovaIA-ProjectOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZotovaIA-ProjectOne.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBB37582814266200359936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CBB375A2814266200359936 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				8CBB37582814266200359936 /* AppDelegate.swift */,
 				8CBB375A2814266200359936 /* SceneDelegate.swift */,
+				8C5C06202822CB00005B7420 /* UIViewController+extension.swift */,
 				8CBB375C2814266200359936 /* ViewController.swift */,
 				8CBB375E2814266200359936 /* Main.storyboard */,
 				8CBB37612814266300359936 /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C5C06212822CB00005B7420 /* UIViewController+extension.swift in Sources */,
 				8CBB375D2814266200359936 /* ViewController.swift in Sources */,
 				8CBB37592814266200359936 /* AppDelegate.swift in Sources */,
 				8CBB375B2814266200359936 /* SceneDelegate.swift in Sources */,
