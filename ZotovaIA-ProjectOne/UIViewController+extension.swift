@@ -11,7 +11,9 @@ import UIKit
 extension UIViewController {
     
     func showError(massage: String) {
-    let alertVC = UIAlertController(title: "Error", message: massage, preferredStyle: .alert)
+    let alertVC = UIAlertController(title: "Error",
+                                    message: massage,
+                                    preferredStyle: .alert)
     let okAktion = UIAlertAction(title: "OK",
                                  style: .default,
                                     handler: nil)

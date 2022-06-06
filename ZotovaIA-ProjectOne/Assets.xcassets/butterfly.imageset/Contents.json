@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "1614553713_68-p-kartinki-babochki-na-belom-fone-93.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "1614553713_68-p-kartinki-babochki-na-belom-fone-94.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "1614553713_68-p-kartinki-babochki-na-belom-fone-95.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
