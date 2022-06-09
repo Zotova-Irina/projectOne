@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		8C5C06212822CB00005B7420 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C06202822CB00005B7420 /* UIViewController+extension.swift */; };
+		8C6319F328378D6B0052BDF9 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6319F228378D6B0052BDF9 /* Friend.swift */; };
+		8C6319F528378DC70052BDF9 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6319F428378DC70052BDF9 /* Group.swift */; };
+		8C6319F92837982B0052BDF9 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6319F72837982B0052BDF9 /* CustomTableViewCell.swift */; };
+		8C6319FA2837982B0052BDF9 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C6319F82837982B0052BDF9 /* CustomTableViewCell.xib */; };
+		8C6319FD28379FEC0052BDF9 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6319FC28379FEC0052BDF9 /* FriendsViewController.swift */; };
+		8C81F8372837D8BF00EE6F34 /* MyGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81F8362837D8BF00EE6F34 /* MyGroupsViewController.swift */; };
+		8CA228252845BEEC0018FD6D /* GalleryViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA228242845BEEC0018FD6D /* GalleryViewController+Delegate.swift */; };
+		8CA228272845BF1B0018FD6D /* GalleryViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA228262845BF1B0018FD6D /* GalleryViewController+DataSource.swift */; };
+		8CA2282A2848143B0018FD6D /* GalleryViewController+FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA228292848143B0018FD6D /* GalleryViewController+FlowLayout.swift */; };
+		8CA3A81028387ABE008A1428 /* AllGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3A80F28387ABE008A1428 /* AllGroupsViewController.swift */; };
+		8CA3E456283C41D700410753 /* GalleryFriendsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3E454283C41D700410753 /* GalleryFriendsCollectionViewCell.swift */; };
+		8CA3E457283C41D700410753 /* GalleryFriendsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3E455283C41D700410753 /* GalleryFriendsCollectionViewCell.xib */; };
+		8CA3E459283C4AAC00410753 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3E458283C4AAC00410753 /* GalleryViewController.swift */; };
 		8CBB37592814266200359936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB37582814266200359936 /* AppDelegate.swift */; };
 		8CBB375B2814266200359936 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB375A2814266200359936 /* SceneDelegate.swift */; };
 		8CBB375D2814266200359936 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB375C2814266200359936 /* ViewController.swift */; };
@@ -18,6 +31,19 @@
 
 /* Begin PBXFileReference section */
 		8C5C06202822CB00005B7420 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
+		8C6319F228378D6B0052BDF9 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		8C6319F428378DC70052BDF9 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		8C6319F72837982B0052BDF9 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		8C6319F82837982B0052BDF9 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		8C6319FC28379FEC0052BDF9 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		8C81F8362837D8BF00EE6F34 /* MyGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsViewController.swift; sourceTree = "<group>"; };
+		8CA228242845BEEC0018FD6D /* GalleryViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryViewController+Delegate.swift"; sourceTree = "<group>"; };
+		8CA228262845BF1B0018FD6D /* GalleryViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryViewController+DataSource.swift"; sourceTree = "<group>"; };
+		8CA228292848143B0018FD6D /* GalleryViewController+FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryViewController+FlowLayout.swift"; sourceTree = "<group>"; };
+		8CA3A80F28387ABE008A1428 /* AllGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsViewController.swift; sourceTree = "<group>"; };
+		8CA3E454283C41D700410753 /* GalleryFriendsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryFriendsCollectionViewCell.swift; sourceTree = "<group>"; };
+		8CA3E455283C41D700410753 /* GalleryFriendsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryFriendsCollectionViewCell.xib; sourceTree = "<group>"; };
+		8CA3E458283C4AAC00410753 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		8CBB37552814266200359936 /* ZotovaIA-ProjectOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZotovaIA-ProjectOne.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBB37582814266200359936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CBB375A2814266200359936 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +65,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C6319F128378CBA0052BDF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C6319F228378D6B0052BDF9 /* Friend.swift */,
+				8C6319F428378DC70052BDF9 /* Group.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C6319F6283797B20052BDF9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8C6319F72837982B0052BDF9 /* CustomTableViewCell.swift */,
+				8C6319F82837982B0052BDF9 /* CustomTableViewCell.xib */,
+				8CA3E454283C41D700410753 /* GalleryFriendsCollectionViewCell.swift */,
+				8CA3E455283C41D700410753 /* GalleryFriendsCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8C6319FB28379F190052BDF9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8CBB375C2814266200359936 /* ViewController.swift */,
+				8C6319FC28379FEC0052BDF9 /* FriendsViewController.swift */,
+				8C81F8362837D8BF00EE6F34 /* MyGroupsViewController.swift */,
+				8CA3A80F28387ABE008A1428 /* AllGroupsViewController.swift */,
+				8CA228282845CF680018FD6D /* GalleryViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8CA228282845CF680018FD6D /* GalleryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8CA3E458283C4AAC00410753 /* GalleryViewController.swift */,
+				8CA228242845BEEC0018FD6D /* GalleryViewController+Delegate.swift */,
+				8CA228262845BF1B0018FD6D /* GalleryViewController+DataSource.swift */,
+				8CA228292848143B0018FD6D /* GalleryViewController+FlowLayout.swift */,
+			);
+			path = GalleryViewController;
+			sourceTree = "<group>";
+		};
 		8CBB374C2814266200359936 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +127,12 @@
 		8CBB37572814266200359936 /* ZotovaIA-ProjectOne */ = {
 			isa = PBXGroup;
 			children = (
+				8C6319F128378CBA0052BDF9 /* Model */,
+				8C6319F6283797B20052BDF9 /* Cells */,
+				8C6319FB28379F190052BDF9 /* Controllers */,
 				8CBB37582814266200359936 /* AppDelegate.swift */,
 				8CBB375A2814266200359936 /* SceneDelegate.swift */,
 				8C5C06202822CB00005B7420 /* UIViewController+extension.swift */,
-				8CBB375C2814266200359936 /* ViewController.swift */,
 				8CBB375E2814266200359936 /* Main.storyboard */,
 				8CBB37612814266300359936 /* Assets.xcassets */,
 				8CBB37632814266300359936 /* LaunchScreen.storyboard */,
@@ -130,6 +201,8 @@
 			files = (
 				8CBB37652814266300359936 /* LaunchScreen.storyboard in Resources */,
 				8CBB37622814266300359936 /* Assets.xcassets in Resources */,
+				8CA3E457283C41D700410753 /* GalleryFriendsCollectionViewCell.xib in Resources */,
+				8C6319FA2837982B0052BDF9 /* CustomTableViewCell.xib in Resources */,
 				8CBB37602814266200359936 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,9 +214,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CA3A81028387ABE008A1428 /* AllGroupsViewController.swift in Sources */,
+				8CA3E456283C41D700410753 /* GalleryFriendsCollectionViewCell.swift in Sources */,
+				8CA228252845BEEC0018FD6D /* GalleryViewController+Delegate.swift in Sources */,
+				8C6319FD28379FEC0052BDF9 /* FriendsViewController.swift in Sources */,
 				8C5C06212822CB00005B7420 /* UIViewController+extension.swift in Sources */,
 				8CBB375D2814266200359936 /* ViewController.swift in Sources */,
+				8C81F8372837D8BF00EE6F34 /* MyGroupsViewController.swift in Sources */,
+				8C6319F328378D6B0052BDF9 /* Friend.swift in Sources */,
+				8CA2282A2848143B0018FD6D /* GalleryViewController+FlowLayout.swift in Sources */,
+				8C6319F92837982B0052BDF9 /* CustomTableViewCell.swift in Sources */,
+				8C6319F528378DC70052BDF9 /* Group.swift in Sources */,
+				8CA3E459283C4AAC00410753 /* GalleryViewController.swift in Sources */,
 				8CBB37592814266200359936 /* AppDelegate.swift in Sources */,
+				8CA228272845BF1B0018FD6D /* GalleryViewController+DataSource.swift in Sources */,
 				8CBB375B2814266200359936 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
