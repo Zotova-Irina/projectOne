@@ -17,36 +17,51 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qku-Xs-mH2">
-                        <rect key="frame" x="47" y="4" width="253" height="36"/>
+                        <rect key="frame" x="48" y="4" width="252" height="36"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="36" id="M0I-ke-v1f"/>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="cah-ak-SVw"/>
+                            <constraint firstAttribute="width" constant="252" id="eia-p2-L9o"/>
                         </constraints>
                         <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="18"/>
                         <color key="textColor" red="0.3947082589" green="0.45416272299999999" blue="0.3805120239" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vd9-FW-rXS">
-                        <rect key="frame" x="11" y="8" width="28" height="28"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jno-OT-zEZ">
+                        <rect key="frame" x="8" y="6" width="24" height="32"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vd9-FW-rXS">
+                                <rect key="frame" x="0.0" y="4" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vd9-FW-rXS" secondAttribute="height" multiplier="1:1" id="TrU-oQ-82j"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="vd9-FW-rXS" secondAttribute="height" multiplier="1:1" id="TrU-oQ-82j"/>
+                            <constraint firstAttribute="bottom" secondItem="vd9-FW-rXS" secondAttribute="bottom" constant="4" id="bqn-qj-4PU"/>
+                            <constraint firstAttribute="trailing" secondItem="vd9-FW-rXS" secondAttribute="trailing" id="ccT-W1-hLh"/>
+                            <constraint firstItem="vd9-FW-rXS" firstAttribute="top" secondItem="jno-OT-zEZ" secondAttribute="top" constant="4" id="jOh-Yx-8GA"/>
+                            <constraint firstItem="vd9-FW-rXS" firstAttribute="leading" secondItem="jno-OT-zEZ" secondAttribute="leading" id="meC-rg-DZ7"/>
                         </constraints>
-                    </imageView>
+                    </view>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="qku-Xs-mH2" secondAttribute="trailing" constant="20" symbolic="YES" id="1yH-Jm-Cxq"/>
+                    <constraint firstItem="jno-OT-zEZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="BZF-SD-lfa"/>
                     <constraint firstItem="qku-Xs-mH2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="ChY-pT-2dn"/>
+                    <constraint firstItem="jno-OT-zEZ" firstAttribute="centerY" secondItem="qku-Xs-mH2" secondAttribute="centerY" id="Frd-GQ-i05"/>
                     <constraint firstAttribute="bottom" secondItem="qku-Xs-mH2" secondAttribute="bottom" constant="4" id="UHR-uu-gOu"/>
-                    <constraint firstAttribute="bottom" secondItem="vd9-FW-rXS" secondAttribute="bottom" constant="8" id="XYf-9U-H6L"/>
-                    <constraint firstItem="qku-Xs-mH2" firstAttribute="leading" secondItem="vd9-FW-rXS" secondAttribute="trailing" constant="8" id="Z3g-2K-UDG"/>
-                    <constraint firstItem="vd9-FW-rXS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dAr-8B-mZb"/>
+                    <constraint firstItem="qku-Xs-mH2" firstAttribute="leading" secondItem="jno-OT-zEZ" secondAttribute="trailing" constant="16" id="UcO-AC-wlG"/>
                     <constraint firstItem="qku-Xs-mH2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hPU-qv-xLv"/>
-                    <constraint firstItem="vd9-FW-rXS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="xAu-X3-3tS"/>
+                    <constraint firstItem="jno-OT-zEZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="mzS-a6-8he"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="avatarImageView" destination="vd9-FW-rXS" id="Xyj-5e-b7d"/>
+                <outlet property="backView" destination="jno-OT-zEZ" id="gaF-WX-64f"/>
                 <outlet property="tatleLable" destination="qku-Xs-mH2" id="Hfc-Ks-QsG"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="84.375"/>

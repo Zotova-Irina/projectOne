@@ -13,8 +13,8 @@ class FriendsViewController: UIViewController {
     
     let reuseIdentifierCustom = "reuseIdentifierCustom"
     let fromFriendsToGallery = "fromFriendsToGallery"
-    let cellHight: CGFloat = 50
     var friendsArray = [Friend]()
+    
     
     
     func fillFriendsArray() {
@@ -31,6 +31,7 @@ class FriendsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         fillFriendsArray()
         
         tableView .register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifierCustom)
@@ -66,7 +67,7 @@ extension FriendsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return cellHight
+        return CGFloat(cellHight)
     }
     
 }

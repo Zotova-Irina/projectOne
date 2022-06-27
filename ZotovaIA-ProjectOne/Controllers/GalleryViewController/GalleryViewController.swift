@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GalleryViewController: UIViewController {
+ class GalleryViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     var reuseIdentifierGallaryCollection = "reuseIdentifierGallaryCollection"

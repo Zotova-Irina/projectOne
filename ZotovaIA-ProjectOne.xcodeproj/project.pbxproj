@@ -14,6 +14,7 @@
 		8C6319FA2837982B0052BDF9 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C6319F82837982B0052BDF9 /* CustomTableViewCell.xib */; };
 		8C6319FD28379FEC0052BDF9 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6319FC28379FEC0052BDF9 /* FriendsViewController.swift */; };
 		8C81F8372837D8BF00EE6F34 /* MyGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81F8362837D8BF00EE6F34 /* MyGroupsViewController.swift */; };
+		8C93654B2869A97A001A31C5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93654A2869A97A001A31C5 /* Constants.swift */; };
 		8CA228252845BEEC0018FD6D /* GalleryViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA228242845BEEC0018FD6D /* GalleryViewController+Delegate.swift */; };
 		8CA228272845BF1B0018FD6D /* GalleryViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA228262845BF1B0018FD6D /* GalleryViewController+DataSource.swift */; };
 		8CA2282A2848143B0018FD6D /* GalleryViewController+FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA228292848143B0018FD6D /* GalleryViewController+FlowLayout.swift */; };
@@ -37,6 +38,7 @@
 		8C6319F82837982B0052BDF9 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		8C6319FC28379FEC0052BDF9 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		8C81F8362837D8BF00EE6F34 /* MyGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsViewController.swift; sourceTree = "<group>"; };
+		8C93654A2869A97A001A31C5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8CA228242845BEEC0018FD6D /* GalleryViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryViewController+Delegate.swift"; sourceTree = "<group>"; };
 		8CA228262845BF1B0018FD6D /* GalleryViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryViewController+DataSource.swift"; sourceTree = "<group>"; };
 		8CA228292848143B0018FD6D /* GalleryViewController+FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryViewController+FlowLayout.swift"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				8C6319FB28379F190052BDF9 /* Controllers */,
 				8CBB37582814266200359936 /* AppDelegate.swift */,
 				8CBB375A2814266200359936 /* SceneDelegate.swift */,
+				8C93654A2869A97A001A31C5 /* Constants.swift */,
 				8C5C06202822CB00005B7420 /* UIViewController+extension.swift */,
 				8CBB375E2814266200359936 /* Main.storyboard */,
 				8CBB37612814266300359936 /* Assets.xcassets */,
@@ -221,6 +224,7 @@
 				8C5C06212822CB00005B7420 /* UIViewController+extension.swift in Sources */,
 				8CBB375D2814266200359936 /* ViewController.swift in Sources */,
 				8C81F8372837D8BF00EE6F34 /* MyGroupsViewController.swift in Sources */,
+				8C93654B2869A97A001A31C5 /* Constants.swift in Sources */,
 				8C6319F328378D6B0052BDF9 /* Friend.swift in Sources */,
 				8CA2282A2848143B0018FD6D /* GalleryViewController+FlowLayout.swift in Sources */,
 				8C6319F92837982B0052BDF9 /* CustomTableViewCell.swift in Sources */,
