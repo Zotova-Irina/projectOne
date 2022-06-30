@@ -6,5 +6,5 @@
 //
 
 import Foundation
-let cellHight = 100
+let cellHight = 200
 

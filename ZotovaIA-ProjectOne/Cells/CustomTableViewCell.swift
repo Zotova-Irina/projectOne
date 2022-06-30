@@ -32,10 +32,10 @@ import UIKit
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        avatarImageView.layer.cornerRadius = CGFloat(cellHight/2)
+        avatarImageView.layer.cornerRadius = CGFloat(avatarImageView.bounds.height/2)
         avatarImageView.layer.borderWidth = 0.5
         avatarImageView.layer.borderColor = UIColor.black.cgColor
-        backView.layer.cornerRadius = CGFloat(cellHight/2)
+        backView.layer.cornerRadius = CGFloat(backView.bounds.height/2)
         backView.layer.shadowColor = UIColor.black.cgColor
         backView.layer.shadowOffset = .zero
         backView.layer.shadowRadius = 10
