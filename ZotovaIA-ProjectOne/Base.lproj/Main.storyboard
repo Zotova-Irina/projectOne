@@ -250,11 +250,11 @@
             </objects>
             <point key="canvasLocation" x="1083" y="-263"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Друзья-->
         <scene sceneID="GnY-UG-aup">
             <objects>
                 <navigationController id="RHT-zh-bEL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="person.2.fill" catalog="system" id="N3j-bj-3uh"/>
+                    <tabBarItem key="tabBarItem" title="Друзья" image="person.2.fill" catalog="system" id="N3j-bj-3uh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kC6-R4-WiI">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -358,11 +358,11 @@
             </objects>
             <point key="canvasLocation" x="3212" y="-450"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Группы-->
         <scene sceneID="0Ta-ti-mLr">
             <objects>
                 <navigationController id="19I-c1-DDb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="circle.grid.3x3.fill" catalog="system" id="SLG-78-wCw"/>
+                    <tabBarItem key="tabBarItem" title="Группы" image="circle.grid.3x3.fill" catalog="system" id="SLG-78-wCw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fBq-NE-1B1">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
