@@ -276,7 +276,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Eha-yZ-r4b">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="147" width="414" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
@@ -291,18 +291,26 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="eGW-56-m8a">
+                                <rect key="frame" x="0.0" y="92" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4ot-zM-7JA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Eha-yZ-r4b" firstAttribute="leading" secondItem="4ot-zM-7JA" secondAttribute="leading" id="0cj-6L-rEe"/>
-                            <constraint firstItem="Eha-yZ-r4b" firstAttribute="top" secondItem="4ot-zM-7JA" secondAttribute="top" id="YMQ-He-Nwv"/>
+                            <constraint firstItem="eGW-56-m8a" firstAttribute="leading" secondItem="4ot-zM-7JA" secondAttribute="leading" id="D7Q-7E-p3h"/>
                             <constraint firstItem="4ot-zM-7JA" firstAttribute="trailing" secondItem="Eha-yZ-r4b" secondAttribute="trailing" id="g1m-pv-6PJ"/>
                             <constraint firstItem="4ot-zM-7JA" firstAttribute="bottom" secondItem="Eha-yZ-r4b" secondAttribute="bottom" id="iub-HH-b8O"/>
+                            <constraint firstItem="4ot-zM-7JA" firstAttribute="trailing" secondItem="eGW-56-m8a" secondAttribute="trailing" id="pZR-bG-S3L"/>
+                            <constraint firstItem="Eha-yZ-r4b" firstAttribute="top" secondItem="eGW-56-m8a" secondAttribute="bottom" constant="4" id="qmT-bI-MF4"/>
+                            <constraint firstItem="eGW-56-m8a" firstAttribute="top" secondItem="4ot-zM-7JA" secondAttribute="top" constant="4" id="zZF-MZ-duS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Друзья" id="JuN-Lw-A2p"/>
                     <connections>
+                        <outlet property="searchBar" destination="eGW-56-m8a" id="sdy-Ut-NVo"/>
                         <outlet property="tableView" destination="Eha-yZ-r4b" id="Iz9-ce-6kO"/>
                         <segue destination="30C-lv-pc8" kind="show" identifier="fromFriendsToGallery" id="SUR-bn-WLz"/>
                     </connections>
