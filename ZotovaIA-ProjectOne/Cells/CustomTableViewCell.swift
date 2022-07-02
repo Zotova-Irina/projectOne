@@ -42,6 +42,7 @@ import UIKit
         backView.layer.shadowOpacity = 0.8
     }
     
+
         @IBInspectable var cornerRadius: CGFloat {
                 set { layer.cornerRadius = newValue  }
                 get { return layer.cornerRadius }
@@ -54,7 +55,15 @@ import UIKit
             set { layer.borderColor = newValue }
             get { return layer.borderColor! }
     }
-
+        @IBInspectable var shadowOffset: CGSize {
+            get { return layer.shadowOffset }
+            set { layer.shadowOffset = newValue  }
+        }
+        @IBInspectable var shadowOpacity: Float {
+            set { layer.shadowOpacity = newValue }
+            get { return layer.shadowOpacity }
+        }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
