@@ -41,7 +41,9 @@ class FriendsViewController: UIViewController {
                 resultArray.append(nameLetter.lowercased())
             }
         }
-        return resultArray
+        return resultArray.sorted {firstItem, secondItem in
+            firstItem < secondItem
+        }
     }
     //MARK: Массив по схожей букве
     
@@ -58,7 +60,6 @@ class FriendsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         fillFriendsArray()
         savedFriendsArray = friendsArray
         
