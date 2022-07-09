@@ -185,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaJ-yG-laH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2518" y="215"/>
+            <point key="canvasLocation" x="3427.5362318840585" y="214.95535714285714"/>
         </scene>
         <!--Группы-->
         <scene sceneID="POl-Kh-kKf">
@@ -230,7 +230,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pee-L4-aca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="9hv-4w-P8q" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3277" y="215"/>
+            <point key="canvasLocation" x="4186.9565217391309" y="214.95535714285714"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="zRl-QM-5bc">
@@ -244,6 +244,7 @@
                     <connections>
                         <segue destination="RHT-zh-bEL" kind="relationship" relationship="viewControllers" id="Bws-y7-qG3"/>
                         <segue destination="19I-c1-DDb" kind="relationship" relationship="viewControllers" id="lZn-1z-Whg"/>
+                        <segue destination="Coi-Yx-W8s" kind="relationship" relationship="viewControllers" id="ehi-F9-9pt"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NlY-7w-Ok2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -277,7 +278,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Eha-yZ-r4b">
                                 <rect key="frame" x="0.0" y="147" width="414" height="666"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.83255219719999995" green="0.87642040580000002" blue="0.82207756909999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="HBg-6S-ggs">
@@ -366,6 +367,47 @@
             </objects>
             <point key="canvasLocation" x="3212" y="-450"/>
         </scene>
+        <!--Новости-->
+        <scene sceneID="hoB-1Z-vdd">
+            <objects>
+                <viewController id="uL1-S3-dfL" customClass="NewsViewController" customModule="ZotovaIA_ProjectOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VV5-EJ-Kcc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ued-03-gms">
+                                <rect key="frame" x="0.0" y="92" width="414" height="721"/>
+                                <color key="backgroundColor" red="0.83255219719999995" green="0.87642040580000002" blue="0.82207756909999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="reuseIdentifierCustomNews" id="yxo-FR-OZa">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yxo-FR-OZa" id="xNg-o3-9zC">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E8g-hX-7en"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ued-03-gms" firstAttribute="top" secondItem="E8g-hX-7en" secondAttribute="top" constant="4" id="2kx-yl-VNO"/>
+                            <constraint firstItem="ued-03-gms" firstAttribute="leading" secondItem="E8g-hX-7en" secondAttribute="leading" id="3rI-No-B5w"/>
+                            <constraint firstItem="E8g-hX-7en" firstAttribute="trailing" secondItem="ued-03-gms" secondAttribute="trailing" id="e5e-Fu-n19"/>
+                            <constraint firstItem="E8g-hX-7en" firstAttribute="bottom" secondItem="ued-03-gms" secondAttribute="bottom" id="eJ6-sJ-wPL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Новости" largeTitleDisplayMode="always" id="K3I-A4-i70"/>
+                    <connections>
+                        <outlet property="newsTitle" destination="ued-03-gms" id="dDD-Yz-2zJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tcB-HK-Rry" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1983" y="215"/>
+        </scene>
         <!--Группы-->
         <scene sceneID="0Ta-ti-mLr">
             <objects>
@@ -381,12 +423,32 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZs-bl-P4c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1829" y="215"/>
+            <point key="canvasLocation" x="2739.130434782609" y="214.95535714285714"/>
+        </scene>
+        <!--Новости-->
+        <scene sceneID="Ita-uq-Sp3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Coi-Yx-W8s" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Новости" image="list.bullet.rectangle.portrait" catalog="system" id="xcf-Ga-50A"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iGz-mT-Bde">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uL1-S3-dfL" kind="relationship" relationship="rootViewController" id="a8W-DJ-9Wq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rH0-Zu-yVf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1255" y="414"/>
         </scene>
     </scenes>
     <resources>
         <image name="circle.grid.3x3.fill" catalog="system" width="128" height="112"/>
         <image name="clever" width="445.5" height="126.5"/>
+        <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="secondarySystemGroupedBackgroundColor">
