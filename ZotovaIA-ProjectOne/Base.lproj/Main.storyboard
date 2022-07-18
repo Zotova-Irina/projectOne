@@ -55,6 +55,44 @@
                                                             <constraint firstItem="W5h-0T-alx" firstAttribute="leading" secondItem="78a-Jg-kMW" secondAttribute="leading" id="iPD-ae-yG5"/>
                                                         </constraints>
                                                     </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7V-xo-UPC">
+                                                        <rect key="frame" x="0.0" y="220" width="197" height="40"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9H-88-iUd">
+                                                                <rect key="frame" x="46" y="11" width="15" height="15"/>
+                                                                <color key="backgroundColor" red="0.8392042266626818" green="0.6458857321065955" blue="0.94719521866904366" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="d9H-88-iUd" secondAttribute="height" multiplier="1:1" id="DI2-pO-XrU"/>
+                                                                    <constraint firstAttribute="width" constant="15" id="M0C-UP-T6Y"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DjV-1G-tdA">
+                                                                <rect key="frame" x="91" y="11" width="15" height="15"/>
+                                                                <color key="backgroundColor" red="0.83920422670000006" green="0.6458857321" blue="0.94719521870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="DjV-1G-tdA" secondAttribute="height" multiplier="1:1" id="cFY-29-sUh"/>
+                                                                    <constraint firstAttribute="width" constant="15" id="hHO-Kg-v18"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9KD-q6-MuV">
+                                                                <rect key="frame" x="136" y="11" width="15" height="15"/>
+                                                                <color key="backgroundColor" red="0.83920422670000006" green="0.6458857321" blue="0.94719521870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="9KD-q6-MuV" secondAttribute="height" multiplier="1:1" id="GlH-RQ-fLc"/>
+                                                                    <constraint firstAttribute="width" constant="15" id="hOR-dx-H9h"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="DjV-1G-tdA" firstAttribute="top" secondItem="B7V-xo-UPC" secondAttribute="top" constant="11" id="1C6-jd-N5S"/>
+                                                            <constraint firstItem="9KD-q6-MuV" firstAttribute="top" secondItem="B7V-xo-UPC" secondAttribute="top" constant="11" id="25K-Co-p34"/>
+                                                            <constraint firstItem="9KD-q6-MuV" firstAttribute="leading" secondItem="DjV-1G-tdA" secondAttribute="trailing" constant="30" id="SBw-cT-OyW"/>
+                                                            <constraint firstItem="d9H-88-iUd" firstAttribute="top" secondItem="B7V-xo-UPC" secondAttribute="top" constant="11" id="emL-td-LHK"/>
+                                                            <constraint firstItem="DjV-1G-tdA" firstAttribute="leading" secondItem="d9H-88-iUd" secondAttribute="trailing" constant="30" id="fCE-pY-8Eu"/>
+                                                            <constraint firstItem="DjV-1G-tdA" firstAttribute="centerX" secondItem="B7V-xo-UPC" secondAttribute="centerX" id="gNN-yZ-p7s"/>
+                                                        </constraints>
+                                                    </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfL-i5-H7K">
                                                         <rect key="frame" x="0.0" y="280" width="197" height="31"/>
                                                         <color key="backgroundColor" red="0.3947082589" green="0.45416272299999999" blue="0.3805120239" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -68,8 +106,11 @@
                                                     </button>
                                                 </subviews>
                                                 <constraints>
+                                                    <constraint firstItem="B7V-xo-UPC" firstAttribute="trailing" secondItem="wfL-i5-H7K" secondAttribute="trailing" id="YXS-df-jNw"/>
+                                                    <constraint firstItem="B7V-xo-UPC" firstAttribute="leading" secondItem="wfL-i5-H7K" secondAttribute="leading" id="eJD-pH-kxm"/>
                                                     <constraint firstItem="wfL-i5-H7K" firstAttribute="trailing" secondItem="78a-Jg-kMW" secondAttribute="trailing" id="n4d-nH-vR8"/>
                                                     <constraint firstItem="wfL-i5-H7K" firstAttribute="top" secondItem="9DD-Ay-oKw" secondAttribute="bottom" constant="80" id="oms-Rz-drp"/>
+                                                    <constraint firstItem="B7V-xo-UPC" firstAttribute="top" secondItem="9DD-Ay-oKw" secondAttribute="bottom" constant="20" id="pQ5-c2-Vgx"/>
                                                     <constraint firstItem="wfL-i5-H7K" firstAttribute="leading" secondItem="78a-Jg-kMW" secondAttribute="leading" id="pwB-Gc-BGt"/>
                                                 </constraints>
                                             </stackView>
@@ -126,6 +167,9 @@
                         <outlet property="titleLabelPassword" destination="eh6-Mu-uS9" id="ZUK-cw-vgn"/>
                         <outlet property="userName" destination="W5h-0T-alx" id="kgb-rG-vYV"/>
                         <outlet property="userPassword" destination="78a-Jg-kMW" id="HZf-4I-TAg"/>
+                        <outlet property="viewLoadingOne" destination="d9H-88-iUd" id="Vvw-t8-yby"/>
+                        <outlet property="viewLoadingTree" destination="9KD-q6-MuV" id="yyL-qx-KKN"/>
+                        <outlet property="viewLoadingTwo" destination="DjV-1G-tdA" id="bjo-Oe-RTf"/>
                         <segue destination="MXf-ce-YGw" kind="presentation" identifier="TabBarSegue" modalPresentationStyle="fullScreen" id="Lun-Rz-cAx"/>
                     </connections>
                 </viewController>

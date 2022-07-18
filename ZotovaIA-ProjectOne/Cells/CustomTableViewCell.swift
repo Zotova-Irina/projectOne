@@ -40,10 +40,27 @@ import UIKit
         backView.layer.shadowOffset = .zero
         backView.layer.shadowRadius = 10
         backView.layer.shadowOpacity = 0.8
+
     }
     
 
-        @IBInspectable var cornerRadius: CGFloat {
+    @IBAction func tapButtonAvatar(_ sender: Any) {
+        UIView.animate(withDuration: 0.3,
+                               delay: 0,
+                       usingSpringWithDamping: 0.2,
+                       initialSpringVelocity: 10,
+                       options: [.curveEaseOut ]) { [weak self] in
+            self!.avatarImageView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+                } completion: { _ in
+                }
+    
+    
+    }
+   
+    
+    
+    
+    @IBInspectable var cornerRadius: CGFloat {
                 set { layer.cornerRadius = newValue  }
                 get { return layer.cornerRadius }
             }

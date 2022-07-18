@@ -43,6 +43,15 @@ class GalleryFriendsCollectionViewCell: UICollectionViewCell {
             countClick.text = String(counter)
         }
         likeEnable = !likeEnable
+    
+        UIView.transition(
+            with: countClick,
+            duration: 0.25, options: [.transitionFlipFromLeft]) {
+                self.countClick.transform.rotated(by: .pi)
+            }
+
+
+    
     }
     
 }

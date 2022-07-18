@@ -31,6 +31,10 @@ class FriendsViewController: UIViewController {
         friendsArray.append(friendTree)
         friendsArray.append(friendFour)
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
     //MARK: Массив друзей и массив первых букв
     
     func arrayLetter (sourceArray: [Friend]) -> [String] {
