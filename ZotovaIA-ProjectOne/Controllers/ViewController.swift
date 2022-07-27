@@ -38,28 +38,6 @@ class ViewController: UIViewController {
         addShadow(view: userName)
         addShadow(view: userPassword)
     }
-//    func loadingViewController (){
-//
-//        UIView.animate(
-//            withDuration: 0.7,
-//            delay: 0,
-//            options: [.repeat, .autoreverse]) { [weak self] in
-//                self?.viewLoadingOne.alpha = 1
-//            } completion: { _ in }
-//
-//        UIView.animate(
-//            withDuration: 0.7,
-//            delay: 0.3,
-//            options: [.repeat, .autoreverse]) { [weak self] in
-//                self?.viewLoadingTwo.alpha = 1
-//            } completion: { _ in }
-//        UIView.animate(
-//            withDuration: 0.7,
-//            delay: 0.6,
-//            options: [.repeat, .autoreverse]) { [weak self] in
-//                self?.viewLoadingTree.alpha = 1
-//            } completion: { _ in }
-//    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

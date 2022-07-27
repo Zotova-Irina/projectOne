@@ -382,13 +382,29 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bJg-4t-bof">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoSell" id="bJg-4t-bof" customClass="PhotosFriendsCollectionViewCell" customModule="ZotovaIA_ProjectOne" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ted-Uk-D9Y">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lg2-ve-ldx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Lg2-ve-ldx" firstAttribute="width" secondItem="ted-Uk-D9Y" secondAttribute="height" multiplier="1:1" id="0UO-cx-ec4"/>
+                                                <constraint firstItem="Lg2-ve-ldx" firstAttribute="leading" secondItem="ted-Uk-D9Y" secondAttribute="leading" id="U0Q-Kc-n0P"/>
+                                                <constraint firstItem="Lg2-ve-ldx" firstAttribute="top" secondItem="ted-Uk-D9Y" secondAttribute="top" id="ZOc-2H-Lhl"/>
+                                                <constraint firstAttribute="trailing" secondItem="Lg2-ve-ldx" secondAttribute="trailing" id="d3I-jA-ABr"/>
+                                                <constraint firstAttribute="bottom" secondItem="Lg2-ve-ldx" secondAttribute="bottom" id="mjW-HF-ppk"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="friendsPhoto" destination="Lg2-ve-ldx" id="sOy-pE-7Id"/>
+                                            <segue destination="gm4-RC-ivy" kind="show" identifier="showBigPhoto" id="kIs-E7-vqN"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -410,6 +426,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWw-W1-wmi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3212" y="-450"/>
+        </scene>
+        <!--Big Photo View Controller-->
+        <scene sceneID="YzT-vN-rNj">
+            <objects>
+                <viewController id="gm4-RC-ivy" customClass="BigPhotoViewController" customModule="ZotovaIA_ProjectOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mud-4h-beH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GZO-2s-SUt">
+                                <rect key="frame" x="4" y="92" width="406" height="717"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E6i-Tf-1MU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GZO-2s-SUt" firstAttribute="leading" secondItem="E6i-Tf-1MU" secondAttribute="leading" constant="4" id="0lE-0T-L5z"/>
+                            <constraint firstItem="GZO-2s-SUt" firstAttribute="top" secondItem="E6i-Tf-1MU" secondAttribute="top" constant="4" id="DiD-aE-KuW"/>
+                            <constraint firstItem="E6i-Tf-1MU" firstAttribute="trailing" secondItem="GZO-2s-SUt" secondAttribute="trailing" constant="4" id="mcI-uU-nvo"/>
+                            <constraint firstItem="E6i-Tf-1MU" firstAttribute="bottom" secondItem="GZO-2s-SUt" secondAttribute="bottom" constant="4" id="wXS-db-2zZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ePw-Y1-tkV"/>
+                    <connections>
+                        <outlet property="bigPhotoFriend" destination="GZO-2s-SUt" id="Uu0-fj-WzW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TUA-Ph-SfI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3909" y="-450"/>
         </scene>
         <!--Новости-->
         <scene sceneID="hoB-1Z-vdd">

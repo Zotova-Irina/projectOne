@@ -9,13 +9,24 @@ import UIKit
 
 extension GalleryViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return photos.count
+        friendsImage.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-       guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifierGallaryCollection, for: indexPath) as? GalleryFriendsCollectionViewCell else {return UICollectionViewCell()}
-        cell .configure(image: self.photos[indexPath.item])
-        return cell
+      let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoSell", for: indexPath) as? PhotosFriendsCollectionViewCell
+        cell!.friendsPhoto.image = friendsImage[indexPath.item]
+        return cell!
     
 }
+}
+
+extension GalleryViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showBigPhoto",
+           let selectedPhoto = collectionView.indexPathsForSelectedItems?.first,
+           let bigPhotoVC = segue.destination as? BigPhotoViewController {
+            bigPhotoVC.photo = friendsImage
+            bigPhotoVC.selectedPhotoIndex = selectedPhoto.item
+        }
+    }
 }
