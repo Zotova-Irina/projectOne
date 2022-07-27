@@ -21,10 +21,10 @@ class FriendsViewController: UIViewController {
     
     
     func fillFriendsArray() {
-        let friendOne = Friend(name: "Бабочка", avatar: UIImage(named: "butterfly")!, photos: [UIImage(named: "butterfly")!, UIImage(named: "natureTree")!])
+        let friendOne = Friend(name: "Бабочка", avatar: UIImage(named: "butterfly")!, photos: [UIImage(named: "butterfly")!, UIImage(named: "natureTree")!, UIImage(named: "природа1")!])
         let friendTwo = Friend(name: "Волк", avatar: UIImage(named: "wolf")!, photos: [UIImage(named: "wolf")!, UIImage(named: "natureTwo")!])
         let friendTree = Friend(name: "Шрек", avatar: UIImage(named: "shreck")!, photos: [UIImage(named: "shreck")!])
-        let friendFour = Friend(name: "Соник", avatar: UIImage(named: "sonic")!, photos: [UIImage(named: "sonic")!])
+        let friendFour = Friend(name: "Соник", avatar: UIImage(named: "sonic")!, photos: [UIImage(named: "sonic")!, UIImage(named: "природа3")!])
         
         friendsArray.append(friendOne)
         friendsArray.append(friendTwo)

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C5916C828915D5D003C2D6F /* BigPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C5916C728915D5D003C2D6F /* BigPhotoCell.xib */; };
+		8C5916CA28915D8C003C2D6F /* BigPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5916C928915D8C003C2D6F /* BigPhotoCell.swift */; };
+		8C5916CC28915FD2003C2D6F /* BigPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5916CB28915FD2003C2D6F /* BigPhotoViewController.swift */; };
 		8C5C06212822CB00005B7420 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C06202822CB00005B7420 /* UIViewController+extension.swift */; };
 		8C6319F328378D6B0052BDF9 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6319F228378D6B0052BDF9 /* Friend.swift */; };
 		8C6319F528378DC70052BDF9 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6319F428378DC70052BDF9 /* Group.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C5916C728915D5D003C2D6F /* BigPhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigPhotoCell.xib; sourceTree = "<group>"; };
+		8C5916C928915D8C003C2D6F /* BigPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigPhotoCell.swift; sourceTree = "<group>"; };
+		8C5916CB28915FD2003C2D6F /* BigPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigPhotoViewController.swift; sourceTree = "<group>"; };
 		8C5C06202822CB00005B7420 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
 		8C6319F228378D6B0052BDF9 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		8C6319F428378DC70052BDF9 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
@@ -88,6 +94,8 @@
 		8C6319F6283797B20052BDF9 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				8C5916C728915D5D003C2D6F /* BigPhotoCell.xib */,
+				8C5916C928915D8C003C2D6F /* BigPhotoCell.swift */,
 				8C6319F72837982B0052BDF9 /* CustomTableViewCell.swift */,
 				8C6319F82837982B0052BDF9 /* CustomTableViewCell.xib */,
 				8C85A33D2873CBCD005FF204 /* CustomNewsTableViewCell.swift */,
@@ -118,6 +126,7 @@
 				8CA228242845BEEC0018FD6D /* GalleryViewController+Delegate.swift */,
 				8CA228262845BF1B0018FD6D /* GalleryViewController+DataSource.swift */,
 				8CA228292848143B0018FD6D /* GalleryViewController+FlowLayout.swift */,
+				8C5916CB28915FD2003C2D6F /* BigPhotoViewController.swift */,
 			);
 			path = GalleryViewController;
 			sourceTree = "<group>";
@@ -218,6 +227,7 @@
 				8CBB37622814266300359936 /* Assets.xcassets in Resources */,
 				8CA3E457283C41D700410753 /* GalleryFriendsCollectionViewCell.xib in Resources */,
 				8C85A3402873CBCD005FF204 /* CustomNewsTableViewCell.xib in Resources */,
+				8C5916C828915D5D003C2D6F /* BigPhotoCell.xib in Resources */,
 				8C6319FA2837982B0052BDF9 /* CustomTableViewCell.xib in Resources */,
 				8CBB37602814266200359936 /* Main.storyboard in Resources */,
 			);
@@ -239,6 +249,8 @@
 				8C85A3422877D517005FF204 /* News.swift in Sources */,
 				8C85A3442877EAC4005FF204 /* NewsViewController.swift in Sources */,
 				8CBB375D2814266200359936 /* ViewController.swift in Sources */,
+				8C5916CC28915FD2003C2D6F /* BigPhotoViewController.swift in Sources */,
+				8C5916CA28915D8C003C2D6F /* BigPhotoCell.swift in Sources */,
 				8C81F8372837D8BF00EE6F34 /* MyGroupsViewController.swift in Sources */,
 				8C93654B2869A97A001A31C5 /* Constants.swift in Sources */,
 				8C6319F328378D6B0052BDF9 /* Friend.swift in Sources */,
