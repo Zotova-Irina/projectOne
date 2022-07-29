@@ -437,10 +437,14 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GZO-2s-SUt">
                                 <rect key="frame" x="4" y="92" width="406" height="717"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gfP-ZY-OBW" appends="YES" id="aW4-br-eNY"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="E6i-Tf-1MU"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GZO-2s-SUt" firstAttribute="leading" secondItem="E6i-Tf-1MU" secondAttribute="leading" constant="4" id="0lE-0T-L5z"/>
                             <constraint firstItem="GZO-2s-SUt" firstAttribute="top" secondItem="E6i-Tf-1MU" secondAttribute="top" constant="4" id="DiD-aE-KuW"/>
@@ -454,6 +458,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TUA-Ph-SfI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="gfP-ZY-OBW">
+                    <connections>
+                        <action selector="rightSwipe:" destination="gm4-RC-ivy" id="guf-se-Wg7"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3909" y="-450"/>
         </scene>

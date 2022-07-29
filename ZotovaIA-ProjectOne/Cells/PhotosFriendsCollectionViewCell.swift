@@ -9,6 +9,5 @@ import UIKit
 
 class PhotosFriendsCollectionViewCell: UICollectionViewCell {
     @IBOutlet var friendsPhoto: UIImageView!
-    
-
-}
+    var friendsImage = [UIImage]()
+ }
