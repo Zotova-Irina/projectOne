@@ -49,21 +49,22 @@ class ViewController: UIViewController {
     
     @IBAction func tupButton(_ sender: UIButton) {
         
-        let login = userName.text
-        let password = userPassword.text
-        
-        if login == "",
-           password == "" {
-//            performSegue(withIdentifier: "TabBarSegue", sender: self)
-            
-        } else {
-            showError(massage: "Нправильно введен логин или пароль")
-        }
-        
+//        let login = userName.text
+//        let password = userPassword.text
+//
+//        if login == "",
+//           password == "" {
+////            performSegue(withIdentifier: "TabBarSegue", sender: self)
+//
+//        } else {
+//            showError(massage: "Нправильно введен логин или пароль")
+//        }
         
         _ = Timer.scheduledTimer(withTimeInterval: 3, repeats: false, block: { timer in
             self.performSegue(withIdentifier: "TabBarSegue", sender: nil)
     })
+       
+        
         func loadingViewController (){
             UIView.animate(
             withDuration: 0.7,

@@ -51,7 +51,7 @@ class BigPhotoViewController: UIViewController {
         view.addGestureRecognizer(panGR)
     }
     
-    @objc func viewPanned(_ panGestureRec: UIGestureRecognizer) {
+    @objc func viewPanned(_ panGestureRec: UIPanGestureRecognizer) {
         switch panGestureRec.state {
         case.began:
             if panGestureRec.translation(in: view).x > 0 {

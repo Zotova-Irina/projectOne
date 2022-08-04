@@ -131,3 +131,4 @@ extension FriendsViewController: UISearchBarDelegate {
         self.tableView.reloadData()
     }
 }
+

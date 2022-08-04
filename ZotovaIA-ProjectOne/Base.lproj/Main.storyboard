@@ -298,7 +298,7 @@
         <!--Друзья-->
         <scene sceneID="GnY-UG-aup">
             <objects>
-                <navigationController id="RHT-zh-bEL" sceneMemberID="viewController">
+                <navigationController id="RHT-zh-bEL" customClass="CustomNavigationController" customModule="ZotovaIA_ProjectOne" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Друзья" image="person.2.fill" catalog="system" id="N3j-bj-3uh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kC6-R4-WiI">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -362,7 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="03N-fv-VVw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2484" y="-450"/>
+            <point key="canvasLocation" x="2514" y="-450"/>
         </scene>
         <!--Галерея-->
         <scene sceneID="93D-bT-zqN">
@@ -505,12 +505,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcB-HK-Rry" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1983" y="215"/>
+            <point key="canvasLocation" x="1987" y="414"/>
         </scene>
         <!--Группы-->
         <scene sceneID="0Ta-ti-mLr">
             <objects>
-                <navigationController id="19I-c1-DDb" sceneMemberID="viewController">
+                <navigationController id="19I-c1-DDb" customClass="CustomNavigationController" customModule="ZotovaIA_ProjectOne" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Группы" image="circle.grid.3x3.fill" catalog="system" id="SLG-78-wCw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fBq-NE-1B1">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -527,7 +527,7 @@
         <!--Новости-->
         <scene sceneID="Ita-uq-Sp3">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Coi-Yx-W8s" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Coi-Yx-W8s" customClass="CustomNavigationController" customModule="ZotovaIA_ProjectOne" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Новости" image="list.bullet.rectangle.portrait" catalog="system" id="xcf-Ga-50A"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iGz-mT-Bde">
