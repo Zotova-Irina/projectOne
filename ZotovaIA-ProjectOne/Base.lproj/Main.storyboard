@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -301,7 +302,6 @@
                 <navigationController id="RHT-zh-bEL" customClass="CustomNavigationController" customModule="ZotovaIA_ProjectOne" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Друзья" image="person.2.fill" catalog="system" id="N3j-bj-3uh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kC6-R4-WiI">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -513,7 +513,6 @@
                 <navigationController id="19I-c1-DDb" customClass="CustomNavigationController" customModule="ZotovaIA_ProjectOne" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Группы" image="circle.grid.3x3.fill" catalog="system" id="SLG-78-wCw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fBq-NE-1B1">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -531,7 +530,6 @@
                     <tabBarItem key="tabBarItem" title="Новости" image="list.bullet.rectangle.portrait" catalog="system" id="xcf-Ga-50A"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iGz-mT-Bde">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

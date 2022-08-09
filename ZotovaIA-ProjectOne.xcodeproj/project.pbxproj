@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8C5916BC28914898003C2D6F /* BigPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5916BB28914898003C2D6F /* BigPhotoViewController.swift */; };
+		8C5916D228A27B7F003C2D6F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5916D128A27B7F003C2D6F /* Settings.swift */; };
 		8C5C06212822CB00005B7420 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C06202822CB00005B7420 /* UIViewController+extension.swift */; };
 		8C6319F328378D6B0052BDF9 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6319F228378D6B0052BDF9 /* Friend.swift */; };
 		8C6319F528378DC70052BDF9 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6319F428378DC70052BDF9 /* Group.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		8C5916BB28914898003C2D6F /* BigPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigPhotoViewController.swift; sourceTree = "<group>"; };
+		8C5916D128A27B7F003C2D6F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		8C5C06202822CB00005B7420 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
 		8C6319F228378D6B0052BDF9 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		8C6319F428378DC70052BDF9 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		8C6319FB28379F190052BDF9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8C5916D128A27B7F003C2D6F /* Settings.swift */,
 				8CBB375C2814266200359936 /* ViewController.swift */,
 				8C6319FC28379FEC0052BDF9 /* FriendsViewController.swift */,
 				8C81F8362837D8BF00EE6F34 /* MyGroupsViewController.swift */,
@@ -254,6 +257,7 @@
 				8C6319F528378DC70052BDF9 /* Group.swift in Sources */,
 				8CF13E69288EA69700F2679E /* PhotosFriendsCollectionViewCell.swift in Sources */,
 				8CA3E459283C4AAC00410753 /* GalleryViewController.swift in Sources */,
+				8C5916D228A27B7F003C2D6F /* Settings.swift in Sources */,
 				8CBB37592814266200359936 /* AppDelegate.swift in Sources */,
 				8CA228272845BF1B0018FD6D /* GalleryViewController+DataSource.swift in Sources */,
 				8CBB375B2814266200359936 /* SceneDelegate.swift in Sources */,
@@ -411,6 +415,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,6 +444,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
