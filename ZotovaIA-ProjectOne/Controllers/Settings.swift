@@ -11,7 +11,7 @@ class Settings {
    static let chared = Settings()
         
     var token = ""
-    var userID: Int
+    var userID: Int = 0
     
     private init(){}
 }
