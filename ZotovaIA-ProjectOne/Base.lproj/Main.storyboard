@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -298,10 +299,9 @@
         <!--Друзья-->
         <scene sceneID="GnY-UG-aup">
             <objects>
-                <navigationController id="RHT-zh-bEL" sceneMemberID="viewController">
+                <navigationController id="RHT-zh-bEL" customClass="CustomNavigationController" customModule="ZotovaIA_ProjectOne" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Друзья" image="person.2.fill" catalog="system" id="N3j-bj-3uh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kC6-R4-WiI">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -362,7 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="03N-fv-VVw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2484" y="-450"/>
+            <point key="canvasLocation" x="2514" y="-450"/>
         </scene>
         <!--Галерея-->
         <scene sceneID="93D-bT-zqN">
@@ -382,13 +382,29 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bJg-4t-bof">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoSell" id="bJg-4t-bof" customClass="PhotosFriendsCollectionViewCell" customModule="ZotovaIA_ProjectOne" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ted-Uk-D9Y">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lg2-ve-ldx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Lg2-ve-ldx" firstAttribute="width" secondItem="ted-Uk-D9Y" secondAttribute="height" multiplier="1:1" id="0UO-cx-ec4"/>
+                                                <constraint firstItem="Lg2-ve-ldx" firstAttribute="leading" secondItem="ted-Uk-D9Y" secondAttribute="leading" id="U0Q-Kc-n0P"/>
+                                                <constraint firstItem="Lg2-ve-ldx" firstAttribute="top" secondItem="ted-Uk-D9Y" secondAttribute="top" id="ZOc-2H-Lhl"/>
+                                                <constraint firstAttribute="trailing" secondItem="Lg2-ve-ldx" secondAttribute="trailing" id="d3I-jA-ABr"/>
+                                                <constraint firstAttribute="bottom" secondItem="Lg2-ve-ldx" secondAttribute="bottom" id="mjW-HF-ppk"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="friendsPhoto" destination="Lg2-ve-ldx" id="sOy-pE-7Id"/>
+                                            <segue destination="gm4-RC-ivy" kind="show" identifier="showBigPhoto" id="kIs-E7-vqN"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -410,6 +426,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWw-W1-wmi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3212" y="-450"/>
+        </scene>
+        <!--Big Photo View Controller-->
+        <scene sceneID="YzT-vN-rNj">
+            <objects>
+                <viewController id="gm4-RC-ivy" customClass="BigPhotoViewController" customModule="ZotovaIA_ProjectOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mud-4h-beH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GZO-2s-SUt">
+                                <rect key="frame" x="4" y="92" width="406" height="717"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gfP-ZY-OBW" appends="YES" id="aW4-br-eNY"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E6i-Tf-1MU"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GZO-2s-SUt" firstAttribute="leading" secondItem="E6i-Tf-1MU" secondAttribute="leading" constant="4" id="0lE-0T-L5z"/>
+                            <constraint firstItem="GZO-2s-SUt" firstAttribute="top" secondItem="E6i-Tf-1MU" secondAttribute="top" constant="4" id="DiD-aE-KuW"/>
+                            <constraint firstItem="E6i-Tf-1MU" firstAttribute="trailing" secondItem="GZO-2s-SUt" secondAttribute="trailing" constant="4" id="mcI-uU-nvo"/>
+                            <constraint firstItem="E6i-Tf-1MU" firstAttribute="bottom" secondItem="GZO-2s-SUt" secondAttribute="bottom" constant="4" id="wXS-db-2zZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ePw-Y1-tkV"/>
+                    <connections>
+                        <outlet property="bigPhotoFriend" destination="GZO-2s-SUt" id="Uu0-fj-WzW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TUA-Ph-SfI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="gfP-ZY-OBW">
+                    <connections>
+                        <action selector="rightSwipe:" destination="gm4-RC-ivy" id="guf-se-Wg7"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3909" y="-450"/>
         </scene>
         <!--Новости-->
         <scene sceneID="hoB-1Z-vdd">
@@ -450,15 +505,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcB-HK-Rry" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1983" y="215"/>
+            <point key="canvasLocation" x="1987" y="414"/>
         </scene>
         <!--Группы-->
         <scene sceneID="0Ta-ti-mLr">
             <objects>
-                <navigationController id="19I-c1-DDb" sceneMemberID="viewController">
+                <navigationController id="19I-c1-DDb" customClass="CustomNavigationController" customModule="ZotovaIA_ProjectOne" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Группы" image="circle.grid.3x3.fill" catalog="system" id="SLG-78-wCw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fBq-NE-1B1">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -472,11 +526,10 @@
         <!--Новости-->
         <scene sceneID="Ita-uq-Sp3">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Coi-Yx-W8s" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Coi-Yx-W8s" customClass="CustomNavigationController" customModule="ZotovaIA_ProjectOne" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Новости" image="list.bullet.rectangle.portrait" catalog="system" id="xcf-Ga-50A"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iGz-mT-Bde">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
