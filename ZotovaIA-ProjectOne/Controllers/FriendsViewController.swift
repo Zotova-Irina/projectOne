@@ -21,10 +21,10 @@ class FriendsViewController: UIViewController {
     
     
     func fillFriendsArray() {
-        let friendOne = Friend(name: "Бабочка", avatar: UIImage(named: "butterfly")!, photos: [UIImage(named: "butterfly")!, UIImage(named: "natureTree")!])
-        let friendTwo = Friend(name: "Волк", avatar: UIImage(named: "wolf")!, photos: [UIImage(named: "wolf")!, UIImage(named: "natureTwo")!])
-        let friendTree = Friend(name: "Шрек", avatar: UIImage(named: "shreck")!, photos: [UIImage(named: "shreck")!])
-        let friendFour = Friend(name: "Соник", avatar: UIImage(named: "sonic")!, photos: [UIImage(named: "sonic")!])
+        let friendOne = Friend(name: "Бабочка", avatar: UIImage(named: "butterfly")!, photos: [UIImage(named: "butterfly")!, UIImage(named: "natureTree")!, UIImage(named: "природа3")!])
+        let friendTwo = Friend(name: "Волк", avatar: UIImage(named: "wolf")!, photos: [UIImage(named: "wolf")!, UIImage(named: "natureTwo")!, UIImage(named: "природа2")!])
+        let friendTree = Friend(name: "Шрек", avatar: UIImage(named: "shreck")!, photos: [UIImage(named: "shreck")!, UIImage(named: "природа1")!])
+        let friendFour = Friend(name: "Соник", avatar: UIImage(named: "sonic")!, photos: [UIImage(named: "sonic")!, UIImage(named: "природа4")!])
         
         friendsArray.append(friendOne)
         friendsArray.append(friendTwo)
@@ -74,13 +74,21 @@ class FriendsViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        _ = segue.source as? FriendsViewController
-        let destinationVC = segue.destination as? GalleryViewController
-        let friend = sender as? Friend
-        destinationVC?.photos = friend!.photos
+        if segue.identifier == "fromFriendsToGallery",
+        let allPhotoVC = segue.destination as? GalleryViewController,
+        let selectedCellIndexPath = tableView.indexPathForSelectedRow {
+            let selectedFriend = friendsArray[selectedCellIndexPath.row]
+            allPhotoVC.friendsImage = selectedFriend.photos
+        }
     }
+        }
+//        _ = segue.source as? FriendsViewController
+//        let destinationVC = segue.destination as? GalleryViewController
+//        let friend = sender as? Friend
+//        destinationVC?.friendsImage = friend!.photos
+
     
-}
+
 
 extension FriendsViewController: UITableViewDelegate, UITableViewDataSource {
     
@@ -123,3 +131,4 @@ extension FriendsViewController: UISearchBarDelegate {
         self.tableView.reloadData()
     }
 }
+

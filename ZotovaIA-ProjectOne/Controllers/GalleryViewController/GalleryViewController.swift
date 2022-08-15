@@ -7,19 +7,20 @@
 
 import UIKit
 
- class GalleryViewController: UIViewController {
+ @IBDesignable class GalleryViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    var reuseIdentifierGallaryCollection = "reuseIdentifierGallaryCollection"
+    var friendsImage = [UIImage]()
 
     
-    var photos = [UIImage]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(UINib(nibName: "GalleryFriendsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifierGallaryCollection)
+//        collectionView.register(UINib(nibName: "GalleryFriendsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifierGallaryCollection)
     }
 }
+ 
